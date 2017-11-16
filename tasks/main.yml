@@ -1,0 +1,24 @@
+---
+
+- name: install personal cli applications
+  homebrew: name={{item}} state=latest
+  with_items:
+    - mupen64plus
+- name: install personal applications
+  homebrew_cask: name={{item}} state=present
+  with_items:
+    - disk-inventory-x
+    - google-hangouts
+    - keepassx
+    - flux
+    - master-password
+    - mamp
+    - owncloud
+    - shuttle
+    - sixtyforce
+    - skype
+    - spectacle
+    - steam
+    #- vox
+    - vox-preferences-pane
+    - youtube-to-mp3
